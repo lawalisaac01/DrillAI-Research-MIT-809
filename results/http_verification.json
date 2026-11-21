@@ -1,0 +1,18 @@
+[
+  {
+    "check": "HTTP results exposes three models",
+    "passed": true
+  },
+  {
+    "check": "HTTP serves the interface",
+    "passed": true
+  },
+  {
+    "check": "HTTP valid prediction returns REVIEW",
+    "passed": true
+  },
+  {
+    "check": "HTTP malformed JSON returns 400",
+    "passed": true
+  }
+]

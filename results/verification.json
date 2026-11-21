@@ -1,0 +1,46 @@
+[
+  {
+    "check": "Disjoint train validation test wells",
+    "passed": true
+  },
+  {
+    "check": "Exactly 4800 rows and 48 wells",
+    "passed": true
+  },
+  {
+    "check": "No response or simulator debug target in features",
+    "passed": true
+  },
+  {
+    "check": "Central days saved match independent arithmetic",
+    "passed": true
+  },
+  {
+    "check": "Fixed campaign cost included",
+    "passed": true
+  },
+  {
+    "check": "Zero benefit still incurs costs",
+    "passed": true
+  },
+  {
+    "check": "Valid synthetic input produces review prediction",
+    "passed": true
+  },
+  {
+    "check": "Out of range measurement withholds prediction",
+    "passed": true
+  },
+  {
+    "check": "Two missing measurements cause abstention",
+    "passed": true
+  },
+  {
+    "check": "One missing measurement can be imputed",
+    "passed": true
+  },
+  {
+    "check": "Nonfinite input rejected",
+    "passed": true
+  }
+]
