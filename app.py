@@ -44,5 +44,8 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json(evaluate(data))
         except (ValueError,TypeError) as e:self.send_json({'error':str(e)},400)
 if __name__=='__main__':
-    print('Open http://127.0.0.1:8990 — Ctrl+C stops the research demonstrator')
-    HTTPServer(('127.0.0.1',8990),Handler).serve_forever()
+    import os
+    port=int(os.environ.get('PORT',8990))
+    host='0.0.0.0' if 'PORT' in os.environ else '127.0.0.1'
+    print(f'Serving on http://{host}:{port} — Ctrl+C stops the research demonstrator')
+    HTTPServer((host,port),Handler).serve_forever()
